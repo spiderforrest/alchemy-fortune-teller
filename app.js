@@ -34,7 +34,7 @@ function toggleSections() {
 }
 
 // i thought this would be elegant but i do not know why it do not work
-for (var i = 0; i < button.length; i++) {
+for (var i = 1; i < button.length; i++) {
     button[i].addEventListener('click', () => {
         console.log('did the thing');
         toggleSections();
