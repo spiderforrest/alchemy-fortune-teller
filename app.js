@@ -1,11 +1,8 @@
-/* Imports */
+// import functions and grab DOM elements
 
-/* Get DOM Elements */
+// let state
 
-/* State */
-
-/* Events */
-
-/* Display Functions */
-
-// (don't forget to call any display functions you want to run on page load!)
+// set event listeners
+// get user input
+// use user input to update state
+// update DOM to reflect the new state
