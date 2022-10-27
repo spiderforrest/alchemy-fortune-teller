@@ -29,16 +29,18 @@
         </header>
 
         <main>
-            <section id="promptSection">
-                <input type="text" value="ask and ye shall receive" />
-                <input class="button" type="button" value="click here" />
+            <section id="prompt-section">
+                <h2>Ask the (legally distinct) arcane 9 ball:</h2>
+                <input type="text" />
+                <input id="submit-button" type="button" value="click here" />
             </section>
-            <section id="answerSection">
+            <section class="hide" id="answer-section">
+                <h2>The 8 ba-I mean, 9 ball says:</h2>
                 <img
                     src="http://appinventor.mit.edu/explore/sites/all/files/ai2tutorials/magic8ball/magic8ball.jpg"
                 />
                 <p id="answer"></p>
-                <input class="button" type="button" value="reset?" />
+                <input id="reset-button" type="button" value="reset?" />
             </section>
         </main>
     </body>

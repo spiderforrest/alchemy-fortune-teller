@@ -1,7 +1,8 @@
 // grab DOM elements
-const button = document.getElementsByClassName('button');
-const promptSection = document.getElementById('prompt');
-const answerSection = document.getElementById('ball');
+const buttonSubmit = document.getElementById('submit-button');
+const buttonReset = document.getElementById('reset-button');
+const promptSection = document.getElementById('prompt-section');
+const answerSection = document.getElementById('answer-section');
 const answer = document.getElementById('answer');
 
 // define answers
@@ -33,12 +34,11 @@ function toggleSections() {
     answerSection.classList.toggle('hide');
 }
 
-// i thought this would be elegant but i do not know why it do not work
-for (var i = 1; i < button.length; i++) {
-    button[i].addEventListener('click', () => {
-        console.log('did the thing');
-        toggleSections();
-        const j = Math.floor(Math.random() * answers.length);
-        answer.textContent = answers[j];
-    });
-}
+buttonSubmit.addEventListener('click', () => {
+    console.log('hi');
+    toggleSections();
+    const i = Math.floor(Math.random() * answers.length);
+    answer.textContent = answers[i];
+});
+
+buttonReset.addEventListener('click', () => toggleSections());
